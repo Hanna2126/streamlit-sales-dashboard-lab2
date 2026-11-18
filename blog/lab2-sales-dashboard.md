@@ -1,9 +1,9 @@
-# Python Vibe Coding 实验 2：用 Streamlit + Plotly 搭一个能用的销售数据看板
+# 实验 2：用 Streamlit + Plotly 搭一个能用的销售数据看板
 
 > 实验目标一句话：把一份带脏数据的订单明细，变成一页打开就能做判断的看板。
 > 最终结果：3810 行原始数据 → 清洗后 3729 行 → 一页六区的看板。
 
-仓库：<https://github.com/Hanna2126/python-vibe-coding-lab2>
+仓库：<https://github.com/Hanna2126/streamlit-sales-dashboard-lab2>
 
 ![看板首屏](images/01-overview.png)
 
@@ -507,8 +507,8 @@ def test_amount_recalculated_to_two_decimals():
 ## 14. 怎么跑起来
 
 ```bash
-git clone https://github.com/Hanna2126/python-vibe-coding-lab2.git
-cd python-vibe-coding-lab2
+git clone https://github.com/Hanna2126/streamlit-sales-dashboard-lab2.git
+cd streamlit-sales-dashboard-lab2
 pip install -r requirements.txt
 
 python data/generate_dataset.py      # 生成含脏数据的原始数据
@@ -540,7 +540,7 @@ dashboard-lab2/
 
 同样的 `sum(amount)`，在清洗前算出来是错的，在清洗后算出来才是销售额；同样的"环比"，定义成"最后一个月 vs 上一个月"，还是"整段区间 vs 上一段区间"，结论可能完全相反。看板把这些问题放大到一屏之内，逼着你先把口径想清楚，再去挑颜色。
 
-至于 Vibe Coding：这次的分工是「我定问题和验收标准，AI 出实现，我逐条验证」。凡是没在浏览器里跑出来的数字、没在终端里打出来的 `passed`，都不算完成——截图和日志就是证据。
+至于开发方式：这次的分工是「我定问题和验收标准，AI 出实现，我逐条验证」。凡是没在浏览器里跑出来的数字、没在终端里打出来的 `passed`，都不算完成——截图和日志就是证据。
 
 ---
 
