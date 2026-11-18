@@ -1,0 +1,40 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.18, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\Administrator\AppData\Local\DoubaoWork\User Data\sandbox_runtime\bases\fa694f517e5995233c80a9a8db5212c2\python\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Administrator\DoubaoWork\chats\2026-11-18\new-chat\dashboard-lab2
+plugins: anyio-4.16.0
+collecting ... collected 31 items
+
+tests/test_clean_data.py::test_valid_row_kept PASSED                     [  3%]
+tests/test_clean_data.py::test_missing_key_field_dropped[category] PASSED [  6%]
+tests/test_clean_data.py::test_missing_key_field_dropped[channel] PASSED [  9%]
+tests/test_clean_data.py::test_missing_key_field_dropped[region] PASSED  [ 12%]
+tests/test_clean_data.py::test_missing_key_field_dropped[member_level] PASSED [ 16%]
+tests/test_clean_data.py::test_missing_key_field_dropped[quantity] PASSED [ 19%]
+tests/test_clean_data.py::test_missing_key_field_dropped[unit_price] PASSED [ 22%]
+tests/test_clean_data.py::test_missing_key_field_dropped[amount] PASSED  [ 25%]
+tests/test_clean_data.py::test_missing_key_field_dropped[order_date] PASSED [ 29%]
+tests/test_clean_data.py::test_invalid_calendar_date_dropped PASSED      [ 32%]
+tests/test_clean_data.py::test_out_of_range_date_dropped PASSED          [ 35%]
+tests/test_clean_data.py::test_bad_quantity_dropped[0] PASSED            [ 38%]
+tests/test_clean_data.py::test_bad_quantity_dropped[-3] PASSED           [ 41%]
+tests/test_clean_data.py::test_bad_quantity_dropped[21] PASSED           [ 45%]
+tests/test_clean_data.py::test_zero_price_dropped PASSED                 [ 48%]
+tests/test_clean_data.py::test_negative_amount_dropped PASSED            [ 51%]
+tests/test_clean_data.py::test_amount_inconsistent_dropped PASSED        [ 54%]
+tests/test_clean_data.py::test_amount_recalculated_to_two_decimals PASSED [ 58%]
+tests/test_clean_data.py::test_full_duplicate_rows_dropped PASSED        [ 61%]
+tests/test_clean_data.py::test_same_order_id_dropped PASSED              [ 64%]
+tests/test_clean_data.py::test_report_metrics_match_frame PASSED         [ 67%]
+tests/test_metrics.py::test_filter_orders_by_dimension PASSED            [ 70%]
+tests/test_metrics.py::test_filter_orders_by_date PASSED                 [ 74%]
+tests/test_metrics.py::test_kpi_summary PASSED                           [ 77%]
+tests/test_metrics.py::test_monthly_trend PASSED                         [ 80%]
+tests/test_metrics.py::test_mom_growth PASSED                            [ 83%]
+tests/test_metrics.py::test_category_share_sums_to_one PASSED            [ 87%]
+tests/test_metrics.py::test_channel_share PASSED                         [ 90%]
+tests/test_metrics.py::test_region_rank_top_n PASSED                     [ 93%]
+tests/test_metrics.py::test_target_achievement PASSED                    [ 96%]
+tests/test_metrics.py::test_text_report_contains_key_sections PASSED     [100%]
+
+============================= 31 passed in 2.98s ==============================

@@ -1,0 +1,5 @@
+干净基准行数：3795
+注入后总行数：3810（额外复制重复行 15 行）
+注入内容：关键字段缺失 24 处、数值异常 24 处、日期非法 12 处、完全重复 15 行、订单号撞号 8 行
+已写出：C:\Users\Administrator\DoubaoWork\chats\2026-11-18\new-chat\dashboard-lab2\data\raw_orders.csv
+字段：order_id, order_date, category, channel, region, member_level, quantity, unit_price, amount, refund_flag
