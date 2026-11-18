@@ -3,6 +3,8 @@
 Streamlit + Pandas + Plotly 实现的单页销售数据看板，覆盖实验要求的基础任务、进阶任务与扩展任务。
 数据为脚本生成的模拟电商订单（2026-01-01 ~ 2026-09-30），含 5 类脏数据，用于演示预处理流程。
 
+实验博客：[Python Vibe Coding 实验 2：用 Streamlit + Plotly 搭一个能用的销售数据看板](blog/Python-Vibe-Coding-lab2.md)
+
 ## 快速开始
 
 ```bash
